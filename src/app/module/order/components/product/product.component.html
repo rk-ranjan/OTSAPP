@@ -1,0 +1,61 @@
+<br>
+<div class="card" *ngIf="!orderAddress">
+    <div class="card-body">
+        <div class="d-flex p-0">
+            <div class="p-1 mr-auto">
+                <img src="../../../../../assets/images/product.png" alt="NoImgFound" width="60%"/>
+                <p class="p-2 text-bold">{{product.ProductName}}</p>
+            </div>
+            <div class="p-1">
+                <div class="d-flex flex-column mr-auto">
+                    <div class="p-2 text-bold">Product: {{product.ProductName}}</div>
+                    <div class="p-2 text-bold">Per Pack: {{product.QuantityPerUnit}}</div>
+                    <div class="p-2 text-bold">In Stock: {{product.UnitsInStock}}</div>
+                    <div class="p-2 text-bold">Price: {{product.UnitPrice}} Per Item</div>
+                    <div class="p-2 text-bold">
+                        Quantity: <input type="number" #quntity id="quantity" min="1" max="5" value="1" style="width: 3em;">
+                    </div>
+                </div>
+            </div>
+        </div>
+       <br>
+    </div>
+    <div class="card-footer">
+        <div class="float-right">
+            <button type="button" class="btn btn-warning" (click)="placeOrder(product)">Order Now</button>
+        </div>
+    </div>
+</div>
+<div class="card" *ngIf="orderAddress">
+    <div class="row card-body">
+        <div class="col-sm-12">
+            <label for="address">Address Line 1</label>
+            <input type="text" class="form-control" #address id="address" placeholder="1234 Main St" required="">
+        </div>
+        <br><br><br><br>
+        <div class="col-sm-12">
+            <label for="address">Address Line 2</label>
+            <input type="text" class="form-control" #address1 id="address1" placeholder="Ner By Govt. Sachool" required="">
+        </div>
+        <br><br><br><br>
+        <div class="col-sm-4">
+            <label for="address">Country</label>
+            <input type="text" class="form-control" #country value="India" id="country" placeholder="India" required="">
+        </div>
+        <br><br><br><br>
+        <div class="col-sm-4">
+            <label for="address">City</label>
+            <input type="text" class="form-control" #state value="Karnatka" id="state" placeholder="Karnatka" required="">
+        </div>
+        <div class="col-sm-4">
+            <label for="address">Zip Code</label>
+            <input type="number" class="custom-selec form-control" #zipCode value="560068" id="zipCode" placeholder="560068" required="">
+        </div>
+    </div>
+    <div class="card-footer">
+        <div class="float-right">
+            <button type="button" class="btn btn-success" (click)="submitOrder(product)">Order Now</button>
+        </div>
+    </div>
+</div>
+<br>

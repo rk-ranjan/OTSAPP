@@ -1,0 +1,10 @@
+  @charset "utf-8";
+  @import "styles/globals/variables";
+  @import "styles/globals/mixins";
+  @import "styles/globals/colors";
+  @import "styles/globals/utility";
+  @import "styles/patterns/card.scss";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;background-color: #f1f1f1b2; }
+@import "styles/shame";

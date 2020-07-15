@@ -1,0 +1,49 @@
+<div class="row secondary-offset">
+  <div class="col-sm-3">
+
+  </div>
+  <div class="col-sm-6 card"> 
+    <form [formGroup]="loginForm" (ngSubmit)="login()" class="form-flat" autocomplete="off" style="border:1px solid #ccc">
+      <div class="container" style="font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+        <h1>Login Here</h1>
+        <p>Please fill in this form to access this System.</p>
+        <p style="color: red;" *ngIf="invalidLoginMessage">Invalid UserName or Password </p>
+        <hr>
+    
+        <label for="user-name">
+          User Name:
+        </label>
+        <input type="text"
+                  #userName
+                  required
+                  id="user-name"
+                  formControlName="userName"
+                  placeholder="Enter your user name">
+    
+        <label for="password">
+                    password: 
+        </label>
+        <input type="password"
+                  #password
+                  required
+                  id="password"
+                  formControlName="password"
+                  placeholder="Enter your valid password">
+        <label>
+          <a routeLink="forgot_password" style="margin-bottom:15px"> Forgot Password ?: </a>
+        </label>      
+        <div class="clearfix">
+          <button type="button" class="cancelbtn">Sign Up</button>
+          <button type="submit"
+                  class="signupbtn"
+                  [disabled]="loginForm.invalid">
+              Log in
+          </button>
+        </div>
+      </div>
+    </form>
+    <br>
+  </div>
+</div>
+<br>
+<br>

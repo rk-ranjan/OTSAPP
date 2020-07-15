@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-sm-3 card" style="padding-top: 20px;">
+        <app-profile [userProfile]="user"></app-profile>
+    </div>
+    <div class="col-sm-9 card" style="padding-top: 20px;">
+        <h6 style="padding-top: 5px;color: black;font-family: Arial, Helvetica, sans-serif;letter-spacing: 2px;">ORDER DETAILS</h6>
+        <div class="d-flex">
+            <div class="p-2 mr-auto" style="width: 50vw;">
+                <div class="input-group example">
+                    <input type="text" #inputstring placeholder="Search by productId or shipName..." name="search" (keyup)="filterOderData(inputstring.value)">
+                    <button type="submit" (click)="filterOderData(inputstring.value)"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+            <div class="p-2">
+                <button class="btn btn-success" (click)="newOrder()"> &nbsp;New Order</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="clearfix">
+                    <div class="float-right">
+                        <pagination [totalItems]="totalOrder" (pageChanged)="pageChanged($event)" [maxSize]="8"></pagination>
+                    </div>
+                 </div>
+            </div>
+        </div>
+        <div class="row" *ngFor="let order of finalList">
+           <div class="col-sm-12">
+              <app-order [order]="order"></app-order>
+           </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-12">
+              <pagination [totalItems]="totalOrder" (pageChanged)="pageChanged($event)" [maxSize]="8"></pagination>
+            </div>
+        </div>
+    </div>
+</div>

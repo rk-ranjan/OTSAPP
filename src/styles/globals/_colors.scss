@@ -1,0 +1,115 @@
+@charset "utf-8";
+
+// Theme Colors
+$color-brand-main:						#0073e7;
+
+// Primary Colors
+$color-primary-blue:                    #0073e7;
+$color-dark-blue:                       #231CA5;
+$color-dark-blue-alt:                   #1e214e;
+$color-blue:                            #01a9e7;
+$color-blue-alt:                        #007cd0;
+$color-light-blue:                      #29ceff;
+$color-light-blue-alt:                  #0db1dd;
+$color-turquoise:                       #3ddcca;
+$color-turquoise-alt:                   #03b5af;
+$color-aqua:                            #1ffbba;
+$color-aqua-alt:                        #00d78e;
+
+// Secondary Colors
+$color-violet:                          #56176c;
+$color-purple:                          #8457b6;
+$color-pink:                            #df287c;
+$color-bright-green:                    #15db66;
+$color-orange:                          #ffce00;
+$color-yellow:                          #fcdb1f;
+$color-red:                             #E5004C;
+$color-green:                           #1AAC60;
+$color-skyblue:							#00ABF3;
+
+
+// Neutrals
+$color-black-full:                      #000000;
+$color-black:                           #1f1f1f;
+$color-dark-grey:                       #2c3d45;
+$color-dark-grey-alt:                   #555555;
+$color-dark-grey-compliment:            #59656a;
+$color-medium-grey:                     #323435;
+$color-medium-grey-alt:					#656668;
+$color-grey:                            #6a7c87;
+$color-light-grey:                      #9dabac;
+$color-very-light-grey:                 #d4d6da;
+$color-very-light-grey-alt:             #e8eae9;
+$color-super-light-grey:                #F1F2F3;
+$color-super-light-grey-alt:            #F7F8F9;
+$color-white:                           #ffffff;
+$color-slate-grey:                      #697c87;
+
+// Check Status
+$color-checked-out:                     #15db66;
+
+// Request Status
+$color-req-approved:                    #15db66;
+$color-req-pending:                     #ffa413;
+$color-req-denied:                      #ec0c2e;
+$color-req-revoked:                     #ec0c2e;
+$color-req-expiring:                    #ffa413;
+$color-req-expired:                     $color-light-grey;
+
+
+// General Status
+$color-success:                         #1AAC60;
+$color-warning:                         $color-orange;
+$color-danger:                          $color-red;
+$color-error:                           $color-danger;
+$color-info:                           	$color-skyblue;
+$color-info-alt:                        $color-primary-blue;
+
+// Risk Color
+$color-risk-high:                       #e5004c;
+$color-risk-medium:                     #f48b34;
+$color-risk-low:                        #fcdb1f;
+$color-risk-unknown:                    #565656;
+
+// Console Output
+$color-console-green:					$color-success;
+$color-console-red:						$color-error;
+
+// Importance Colors
+$color-imp-very-high:                       #ec0c2e;
+$color-imp-high:                            #ff5627;
+$color-imp-medium:                          #ffa413;
+$color-imp-low:                             #80c03c;
+$color-imp-very-low:                        #01a9e7;
+
+// Notification
+$color-nf-warning:                      $color-yellow;
+$color-nf-warning-bg:                   $color-yellow;
+$color-nf-warning-fg:                   $color-black;
+
+$color-nf-info:                         $color-skyblue;
+$color-nf-info-bg:                      $color-skyblue;
+$color-nf-info-fg:                      $color-white;
+
+$color-nf-success:                      $color-green;
+$color-nf-success-bg:                   $color-green;
+$color-nf-success-fg:                   $color-white;
+
+$color-nf-danger:                       $color-red;
+$color-nf-danger-bg:                    $color-red;
+$color-nf-danger-fg:                    $color-white;
+
+// Box Shadow Colors
+$box-shadow-20: rgba(0, 0, 0, .2);
+$box-shadow-45: rgba(0, 0, 0, .45);
+$box-shadow-60: rgba(0, 0, 0, .6);
+
+// Layout Colors
+$body-bg-color: 						#F1F2F3;
+$body-fg-color: 						$color-medium-grey;
+
+// Table Row highlight colors
+$table-row-selected-bg: rgba($color-primary-blue, 0.1);
+$table-row-selected-border-color: $color-primary-blue; 
+
+

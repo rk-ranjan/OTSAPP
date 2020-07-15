@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="header-view">
+        <div class="d-flex bg-secondary">
+            <div class="p-2 flex-fill bg-info">
+                <p class="text-normal">ORDER DATE: {{ order.OrderDate }}</p>
+            </div>
+            <div class="p-2 flex-fill bg-primary">
+                <p class="text-normal">SHIPPED DATE: {{ order.ShippedDate }}</p>
+            </div>
+            <div class="p-2 flex-fill bg-warning">
+                <p class="text-normal">SHIP ADDRESS: {{ order.ShipAddress }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <div class="d-flex">
+            <div class="p-2 flex-fill">
+                <img src="../../../../../assets/images/product.png" alt="NoImgFound" width="25%">
+                <br><br>
+                <p class="text-bold">OrderID: {{ order.OrderID }} </p>
+            </div>
+            <div class="p-2 mr-auto flex-fill">
+                <p class="text-bold">ShipName: {{ order.ShipName }} </p>
+                <p class="text-bold">CustomerID: {{ order.CustomerID }}</p>
+                <p class="text-bold">EmployeeID: {{ order.EmployeeID }}</p>
+                <p class="text-bold">ShipPostalCode: {{ order.ShipPostalCode }}</p>
+            </div>
+            <div class="p-2 ml-auto">
+                <p class="text-bold">CustomerID: {{ order.CustomerID }}</p>
+                <p class="text-bold">ShipVia: {{ order.ShipVia }}</p>
+                <p class="text-bold">Freight: {{ order.Freight }}</p>
+                <button class="btn btn-warning" (click)="cancelOrder(order)">Cancel Order</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer-view">
+        <div class="d-flex bg-secondary">
+            <div class="p-2">
+                <p class="text-normal">SHIP CITY: {{ order.ShipCity }}</p>
+            </div>
+            <div class="p-2 ml-auto">
+                <p class="text-normal">SHIP COUNTRY: {{ order.ShipCountry }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>

@@ -1,0 +1,21 @@
+<div class="card">
+    <div class="card-header">
+            <h5>Welcome to OTS Portal...!! </h5>
+    </div>
+    <div class="card-body">
+            <div class="d-flex">
+                <div class="p-2 mr-auto flex-fill">
+                    
+                    <p class="text-bold" style="font-weight: bold;">User ID: {{ userProfile.UserId }}</p>
+                    <p class="text-bold" style="font-weight: bold;">UserName: {{ userProfile.userName }}</p>
+                    <p class="text-bold" style="font-weight: bold;">Email: {{ userProfile.Email }}</p>
+                    <p class="text-bold" style="font-weight: bold;">Your Role: {{ role }}</p>
+                </div>
+            </div>
+    </div>
+    <div class="card-footer">
+        <button type="button" class="btn btn-success" (click)="logOut()">
+            Log Out
+        </button>
+    </div>
+</div>

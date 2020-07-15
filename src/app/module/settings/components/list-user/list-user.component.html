@@ -1,0 +1,62 @@
+<table class="table table-hover">
+    <thead>
+      <tr>
+        <th>UserId</th>
+        <th>Email</th>
+        <th>UserName</th>
+        <th>Admin</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of listUser">
+        <td>{{user.UserId}}</td>
+        <td>{{user.Email}}</td>
+        <td>{{user.userName}}</td>
+        <td>{{user.IsAdmin}}</td>
+        <td><button (click)="editUser(user)" data-toggle="modal" data-target="#exampleModalCenter"><span class="fa fa-edit"></span></button></td>
+      </tr>
+    </tbody>
+  </table>
+  <!-- Button trigger modal -->
+  <!-- Modal -->
+<div class="modal fade" #completeModal id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Update User</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form">
+          <form class="form"  [formGroup]="userForm" (ngSubmit)="addUser()">
+                <div class="form-group">
+                  <input type="text" formControlName="UserId" class="form-control" placeholder="Enter UserId" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" formControlName="UserName" class="form-control" placeholder="Enter UserName" required>
+                </div>
+                <div class="form-group">
+                  <input type="text" formControlName="Email" class="form-control" placeholder="Enter Email" required>
+                </div>
+                <div class="form-group">
+                  <input type="password" formControlName="Password" class="form-control" placeholder="Enter Password" required>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="checkbox" formControlName="IsAdmin" class="form-check-input" checked > IsAdmin ?
+                    <input type="text" #uniqueId formControlName="id" disabled/>
+                  </label>
+                </div>
+            </form>
+        </div>
+      </div>
+      <div class="modal-footer">
+          <button type="button" class="ml-0 btn btn-warning" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-success float-right" (click)="updateUser(uniqueId.value)">Update</button>
+      </div>
+    </div>
+  </div>
+</div>
