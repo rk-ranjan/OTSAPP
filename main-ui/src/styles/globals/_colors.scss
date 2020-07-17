@@ -81,35 +81,3 @@ $color-imp-high:                            #ff5627;
 $color-imp-medium:                          #ffa413;
 $color-imp-low:                             #80c03c;
 $color-imp-very-low:                        #01a9e7;
-
-// Notification
-$color-nf-warning:                      $color-yellow;
-$color-nf-warning-bg:                   $color-yellow;
-$color-nf-warning-fg:                   $color-black;
-
-$color-nf-info:                         $color-skyblue;
-$color-nf-info-bg:                      $color-skyblue;
-$color-nf-info-fg:                      $color-white;
-
-$color-nf-success:                      $color-green;
-$color-nf-success-bg:                   $color-green;
-$color-nf-success-fg:                   $color-white;
-
-$color-nf-danger:                       $color-red;
-$color-nf-danger-bg:                    $color-red;
-$color-nf-danger-fg:                    $color-white;
-
-// Box Shadow Colors
-$box-shadow-20: rgba(0, 0, 0, .2);
-$box-shadow-45: rgba(0, 0, 0, .45);
-$box-shadow-60: rgba(0, 0, 0, .6);
-
-// Layout Colors
-$body-bg-color: 						#F1F2F3;
-$body-fg-color: 						$color-medium-grey;
-
-// Table Row highlight colors
-$table-row-selected-bg: rgba($color-primary-blue, 0.1);
-$table-row-selected-border-color: $color-primary-blue; 
-
-
