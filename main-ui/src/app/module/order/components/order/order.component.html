@@ -2,10 +2,10 @@
     <div class="header-view">
         <div class="d-flex bg-secondary">
             <div class="p-2 flex-fill bg-info">
-                <p class="text-normal">ORDER DATE: {{ order.OrderDate }}</p>
+                <p class="text-normal">ORDER DATE: {{ order.OrderDate | date:'shortDate' }}</p>
             </div>
             <div class="p-2 flex-fill bg-primary">
-                <p class="text-normal">SHIPPED DATE: {{ order.ShippedDate }}</p>
+                <p class="text-normal">SHIPPED DATE: {{ order.ShippedDate | date:'shortDate'}}</p>
             </div>
             <div class="p-2 flex-fill bg-warning">
                 <p class="text-normal">SHIP ADDRESS: {{ order.ShipAddress }}</p>

@@ -7,7 +7,7 @@ import { setTheme } from 'ngx-bootstrap/utils';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'UrbanStaffs';
+  title = 'OTS: Order Tracking System';
   constructor() {
     setTheme('bs4');
   }
